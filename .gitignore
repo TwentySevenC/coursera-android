@@ -30,3 +30,4 @@ proguard/
 
 #Video files
 *.mp4
+/*/*.mp4
