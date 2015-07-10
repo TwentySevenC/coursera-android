@@ -338,4 +338,13 @@ public class MainActivity extends Activity implements SelectionListener,
 		}
 		return rawFeeds.toArray(new String[rawFeeds.size()]);
 	}
+
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
+		Log.i(TAG, "MainActivity destroyed");
+	}
+	
+	
 }

@@ -94,7 +94,9 @@ public class DownloaderTaskFragment extends Fragment {
 		@Override
 		protected void onPostExecute(String[] result) {
 			// TODO Auto-generated method stub
-			mCallback.notifyDataRefreshed(result);
+			if(mCallback != null){
+				mCallback.notifyDataRefreshed(result);
+			}
 		}
 
 
